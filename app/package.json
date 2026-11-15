@@ -1,0 +1,15 @@
+{
+  "name": "k8s-webapp",
+  "version": "1.0.0",
+  "description": "Zero-dependency Node.js web app built for a Git + Kubernetes CI/CD pipeline",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

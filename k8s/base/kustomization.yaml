@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+labels:
+  - pairs:
+      app.kubernetes.io/part-of: k8s-webapp
+resources:
+  - configmap.yaml
+  - deployment.yaml
+  - service.yaml
+  - hpa.yaml
+  - pdb.yaml
+  - ingress.yaml
+  - networkpolicy.yaml
+images:
+  - name: webapp
+    newName: ghcr.io/YOUR_GITHUB_USER/k8s-webapp
+    newTag: latest

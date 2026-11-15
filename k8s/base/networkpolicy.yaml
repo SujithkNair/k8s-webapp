@@ -1,0 +1,14 @@
+# Only allow inbound traffic on the app port. Enforced by Calico/Cilium.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: webapp
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: webapp
+  policyTypes: ["Ingress"]
+  ingress:
+    - ports:
+        - port: 8080
+          protocol: TCP
