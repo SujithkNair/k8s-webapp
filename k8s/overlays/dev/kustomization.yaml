@@ -12,7 +12,7 @@ patches:
       value: NodePort
     - op: add
       path: /spec/ports/0/nodePort
-      value: 30080
+      value: 30090
   target:
     kind: Service
     name: webapp
