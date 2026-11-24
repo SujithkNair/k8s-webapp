@@ -1,6 +1,6 @@
 # Apply once after installing Argo CD:
 #   kubectl apply -n argocd -f argocd/applications.yaml
-# Replace YOUR_GITHUB_USER with your GitHub username/org.
+# Replace sujithknair with your GitHub username/org.
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USER/k8s-webapp.git
+    repoURL: https://github.com/sujithknair/k8s-webapp.git
     targetRevision: main
     path: k8s/overlays/dev
   destination:
@@ -30,7 +30,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USER/k8s-webapp.git
+    repoURL: https://github.com/sujithknair/k8s-webapp.git
     targetRevision: main
     path: k8s/overlays/prod
   destination:

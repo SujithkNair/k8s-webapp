@@ -46,7 +46,7 @@ docker build -t k8s-webapp . && docker run -p 8080:8080 k8s-webapp
 
 ```bash
 # Replace the placeholder everywhere with your GitHub user/org (lowercase)
-grep -rl YOUR_GITHUB_USER . | xargs sed -i 's/YOUR_GITHUB_USER/<your-user>/g'
+grep -rl sujithknair . | xargs sed -i 's/sujithknair/<your-user>/g'
 
 git remote add origin https://github.com/<your-user>/k8s-webapp.git
 git push -u origin main

@@ -35,5 +35,5 @@ configMapGenerator:
 # CI updates this tag on every push to main.
 images:
   - name: webapp
-    newName: ghcr.io/YOUR_GITHUB_USER/k8s-webapp
+    newName: ghcr.io/sujithknair/k8s-webapp
     newTag: latest
