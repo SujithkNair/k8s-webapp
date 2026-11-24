@@ -42,4 +42,4 @@ configMapGenerator:
 images:
 - name: webapp
   newName: ghcr.io/sujithknair/k8s-webapp
-  newTag: sha-818c88e
+  newTag: sha-276d567
